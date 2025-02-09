@@ -7,32 +7,42 @@
         <title>Momentum App</title>
     </head>
     <body>
-        <h2 id="clock">00:00:00</h2>
-        <form id="login-form" class="hidden">
-            <input
-                required
-                maxlength="15"
-                type="text"
-                placeholder="What is your name?"
-            />
-            <button>Log In</button>
-        </form>
-        <h1 id="greeting" class="hidden"></h1>
-        <form id="todo-form">
-            <input
-                type="text"
-                placeholder="Write a To Do and Press Enter"
-                required
-            />
-        </form>
-        <ul id="todo-list"></ul>
-        <div id="quote">
-            <span></span>
-            <span></span>
-        </div>
-        <div id="weather">
-            <span></span>
-            <span></span>
+        <div class="container">
+            <div class="upper-section weather">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="main-section">
+                <div class="clock-box">
+                    <h2 class="clock">00:00:00</h2>
+                </div>
+                <div class="form-box">
+                    <form class="login-form hidden">
+                        <input
+                            required
+                            maxlength="15"
+                            type="text"
+                            placeholder="What is your name?"
+                        />
+                        <button class="hidden">Log In</button>
+                    </form>
+                    <h1 class="greeting hidden"></h1>
+                    <form class="todo-form hidden">
+                        <input
+                            type="text"
+                            placeholder="Write a To Do and Press Enter"
+                            required
+                        />
+                    </form>
+                    <ul class="todo-list"></ul>
+                </div>
+            </div>
+            <div class="bottom-section">
+                <div class="quote">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </div>
         <script src="js/greetings.js"></script>
         <script src="js/clock.js"></script>

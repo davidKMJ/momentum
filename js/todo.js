@@ -1,6 +1,6 @@
-const toDoForm = document.getElementById("todo-form");
+const toDoForm = document.querySelector(".todo-form");
 const toDoInput = toDoForm.querySelector("input");
-const toDoList = document.getElementById("todo-list");
+const toDoList = document.querySelector(".todo-list");
 
 const TODOS_KEY = "todos";
 
@@ -23,10 +23,11 @@ function paintToDo(newToDoObject) {
     const span = document.createElement("span");
     span.innerText = newToDoObject.text;
     const button = document.createElement("button");
-    button.innerText = "❌";
+    button.innerText = "remove";
     button.addEventListener("click", deleteToDo);
     li.appendChild(span);
     li.appendChild(button);
+    li.classList.add("todo-list__item");
     toDoList.appendChild(li);
 }
 
