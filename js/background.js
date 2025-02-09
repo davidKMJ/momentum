@@ -29,4 +29,5 @@ while (color2 === color1) {
 
 const angle = Math.floor(Math.random() * 360);
 
+// created image using linear-gradient to give more variety of background
 container.style.background = `linear-gradient(${angle}deg, ${color1}, ${color2})`;
