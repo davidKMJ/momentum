@@ -58,7 +58,7 @@ const quotes = [
     {
         quote: "Simplicity is the soul of efficiency.",
         author: "Austin Freeman",
-    }
+    },
 ];
 
 const quote = document.querySelector(".quote span:first-child");
