@@ -558,5 +558,3 @@ momentum/
 │   └── weather.js      # Weather API integration
 └── img/                # Background images
 ```
-
-This project demonstrates core JavaScript concepts through practical implementation, making it an excellent learning resource for understanding how JavaScript works in real-world applications.
