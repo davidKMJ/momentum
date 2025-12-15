@@ -1,6 +1,69 @@
 # momentum
+![Static Badge](https://img.shields.io/badge/status-published-brightgreen?style=for-the-badge)
+![Static Badge](https://img.shields.io/badge/type-learning_project-blue?style=for-the-badge)
 
-A JavaScript learning project that demonstrates fundamental JavaScript concepts through building a personal dashboard application.
+A personal dashboard application that demonstrates fundamental JavaScript concepts through building a real-time clock, weather display, todo list, and inspirational quotes.
+
+## How to Start
+
+### Environment
+- Modern web browser (Chrome, Firefox, Safari, Edge)
+- No build tools or package managers required
+- Local web server recommended (optional, for CORS compliance)
+
+### Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/davidkmj/momentum.git
+cd momentum
+
+# Open in browser
+# Simply open index.html in your web browser
+# Or use a local server:
+python -m http.server 8000
+# Then navigate to http://localhost:8000
+```
+
+**Note**: For weather functionality, allow location access when prompted by your browser.
+
+## Key Features
+
+1. **Real-time Clock** – Displays current time with seconds, updates every second
+2. **Weather Display** – Shows current weather and temperature based on geolocation
+3. **Personalized Greetings** – Custom welcome message with username persistence
+4. **Todo List** – Add and remove tasks with local storage persistence
+5. **Inspirational Quotes** – Randomly displays motivational quotes from tech leaders
+6. **Dynamic Backgrounds** – Random gradient backgrounds for visual variety
+
+## Technical Stack
+
+- **HTML5** – Semantic markup and structure
+- **CSS3** – Styling and responsive design
+- **Vanilla JavaScript (ES6+)** – Core functionality and interactivity
+- **LocalStorage API** – Client-side data persistence
+- **Geolocation API** – Location-based weather data
+- **Fetch API** – Asynchronous HTTP requests to OpenWeatherMap API
+
+## Project Structure
+```
+momentum/
+├── index.html              # Main HTML file
+├── css/                    # Stylesheets
+│   └── style.css          # Main stylesheet
+├── js/                     # JavaScript modules
+│   ├── background.js       # Dynamic gradient background generation
+│   ├── clock.js            # Real-time clock functionality
+│   ├── greetings.js        # Username login and greeting display
+│   ├── quotes.js           # Random quote selection and display
+│   ├── todo.js             # Todo list management and persistence
+│   └── weather.js          # Weather API integration and display
+├── img/                    # Image assets
+│   ├── 0.jpg              # Background image
+│   ├── 1.jpg              # Background image
+│   └── 2.jpg              # Background image
+└── README.md               # Project documentation
+```
 
 ## Table of Contents
 
@@ -539,22 +602,3 @@ const { lat, lon } = position.coords;
 ```
 
 **Example in project**: See `js/weather.js` for arrow functions and template literals throughout all files.
-
----
-
-## Project Structure
-
-```
-momentum/
-├── index.html          # Main HTML structure
-├── css/
-│   └── style.css       # Styling
-├── js/
-│   ├── background.js   # Random background generation
-│   ├── clock.js        # Real-time clock
-│   ├── greetings.js    # User login and greeting
-│   ├── quotes.js       # Random quote display
-│   ├── todo.js         # Todo list functionality
-│   └── weather.js      # Weather API integration
-└── img/                # Background images
-```
